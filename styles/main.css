@@ -22,6 +22,5 @@ a:hover {
 	text-decoration: underline;
 }
 
-.surprise:hover {
-	background-color: #00ffff;
-}
+.surprise:hover {background-color: #00ffff;}
+.active_href:active {color: green;}
