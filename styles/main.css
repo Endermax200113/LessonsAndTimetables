@@ -11,3 +11,17 @@ html {
 	background-color: #000000;
 }
 #blue_text {color: blue;}
+
+a {
+	color: red;
+	text-decoration: none;
+}
+
+a:hover {
+	color: blue;
+	text-decoration: underline;
+}
+
+.surprise:hover {
+	background-color: #00ffff;
+}
