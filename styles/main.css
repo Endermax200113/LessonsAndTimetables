@@ -3,3 +3,8 @@ html {
 	font-size: 11pt;
 	text-align: center;
 }
+
+.green_text {color: green;}
+#red_text {color: red;}
+#yellow_text {color: yellow;}
+#blue_text {color: blue;}
