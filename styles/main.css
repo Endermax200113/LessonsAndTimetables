@@ -8,6 +8,6 @@ html {
 #red_text {color: red;}
 #yellow_text {
 	color: yellow;
-	background-color: black;
+	background-color: #000000;
 }
 #blue_text {color: blue;}
