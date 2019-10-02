@@ -6,5 +6,8 @@ html {
 
 .green_text {color: green;}
 #red_text {color: red;}
-#yellow_text {color: yellow;}
+#yellow_text {
+	color: yellow;
+	background-color: black;
+}
 #blue_text {color: blue;}
