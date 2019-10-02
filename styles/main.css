@@ -1,7 +1,12 @@
 html {
+	background: url(../images/background.jpg) #000088;
 	font-family: Segoe UI;
 	font-size: 11pt;
 	text-align: center;
+}
+
+p, a {
+	background-color: #ffffff;
 }
 
 .green_text {color: green;}
