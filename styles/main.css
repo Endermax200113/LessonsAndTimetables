@@ -5,45 +5,20 @@ html {
 	text-align: center;
 }
 
-p, a {
-	background-color: #ffffff;
+p {
+	background-color: #fff;
 }
 
-.green_text {color: green;}
-#red_text {color: red;}
-#yellow_text {
-	color: yellow;
-	background-color: #000000;
-}
-#blue_text {color: blue;}
-
-a {
-	color: red;
-	text-decoration: none;
-}
-
-a:hover {
-	color: blue;
-	text-decoration: underline;
-}
-
-.surprise:hover {background-color: #00ffff;}
-.active_href:active {color: #008800;}
-.visited_href:visited {color: #ff00ff;}
-
-big {background-color: #ffffff;}
-big:hover {text-transform: uppercase;}
-big:active {
-	word-spacing: 10px;
-	letter-spacing: 10px;
-}
-
-.rectangle {
-	border: 7px dotted gray;
-	text-align: left;
-	background-color: #ffffff;
-	height: 200px;
-	width: 500px;
+header {
+	width: calc(100% - 24px);
+	height: 50px;
+	background-color: #fff;
+	position: fixed;
+	border: 2px solid silver;
+	margin: -8px 0px 0px -8px;
 	padding: 10px;
-	margin: 0 auto;
+}
+
+.empty {
+	height: 1500px;
 }
