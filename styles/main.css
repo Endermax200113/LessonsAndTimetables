@@ -39,7 +39,7 @@ big:active {
 }
 
 .rectangle {
-	border: dotted gray;
+	border: 7px dotted gray;
 	text-align: left;
 	background-color: #ffffff;
 	height: 200px;
