@@ -37,3 +37,13 @@ big:active {
 	word-spacing: 10px;
 	letter-spacing: 10px;
 }
+
+.rectangle {
+	border: dotted gray;
+	text-align: left;
+	background-color: #ffffff;
+	height: 200px;
+	width: 500px;
+	padding: 10px;
+	margin: 0 auto;
+}
