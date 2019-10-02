@@ -30,3 +30,10 @@ a:hover {
 .surprise:hover {background-color: #00ffff;}
 .active_href:active {color: #008800;}
 .visited_href:visited {color: #ff00ff;}
+
+big {background-color: #ffffff;}
+big:hover {text-transform: uppercase;}
+big:active {
+	word-spacing: 10px;
+	letter-spacing: 10px;
+}
