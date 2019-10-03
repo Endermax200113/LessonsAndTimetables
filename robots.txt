@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://lessonsandtimetables.tk/sitemap/sitemap.txt
+Sitemap: https://lessonsandtimetables.tk/sitemap/sitemap.xml
