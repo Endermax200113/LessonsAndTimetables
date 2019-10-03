@@ -1,3 +1,8 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
 html {
 	background: url(../images/background.jpg) #000088;
 	font-family: Segoe UI;
@@ -15,7 +20,6 @@ header {
 	background-color: #fff;
 	position: fixed;
 	border: 2px solid silver;
-	margin: -8px 0px 0px -8px;
 	padding: 10px;
 }
 
