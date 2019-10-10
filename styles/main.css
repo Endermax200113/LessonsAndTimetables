@@ -32,6 +32,11 @@ a:active {
 	transition: all.2s ease-in;
 }
 
+::selection {
+	background-color: #ff8888;
+	color: #fff;
+}
+
 header {
 	width: calc(100% - 24px);
 	height: 50px;
