@@ -58,6 +58,53 @@ footer {
 	background-color: #fff;
 }
 
+header, footer {
+	float: left;
+}
+
 #empty {
 	height: 1000px;
+}
+
+#bg {
+	background-color: #fff;
+	height: 120px;
+}
+
+#menu {
+	color: #666;
+	font-family: Comic Sans MS, sans-serif;
+	font-size: 1.7em;
+}
+
+#menu hr {
+	width: 500px;
+	max-width: 100%;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+hr {
+	display: block;
+	border: 0;
+	height: 0px;
+	border: 1px solid #ccc;
+	padding: 0;
+}
+
+#menuHrefs a {
+	padding: 5px;
+	border-right: 5px;
+	margin-right: 5px;
+	color: #626262;
+}
+
+#menuHrefs a:hover {
+	background-color: #cfcfcf;
+	color: #000;
+}
+
+#menuHrefs a:active {
+	background-color: #9f9f9f;
+	color: #fff;
 }
