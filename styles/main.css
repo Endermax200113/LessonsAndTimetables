@@ -57,6 +57,7 @@ footer {
 	margin-top: 10px;
 	width: calc(98% - 4px);
 	background-color: #fff;
+	height: auto;
 }
 
 header, footer {
@@ -69,7 +70,7 @@ header, footer {
 
 #bg {
 	background-color: #fff;
-	height: 120px;
+	height: 80px;
 }
 
 #menu {
@@ -184,4 +185,25 @@ hr {
 #wrapper #articles article a:active {
 	background-color: #8f8f8f;
 	color: #fff;
+}
+
+#taskTitle {
+	color: #c70;
+	font-size: 1.4em;
+}
+
+#taskBasic {
+	font-family: Segoe UI Light;
+	color: #520;
+	font-size: 1.05em;
+}
+
+#conditionTitle {
+	color: #e44;
+	font-size: 1.4em;
+}
+
+#conditionBasic {
+	font-family: Segoe UI Light;
+	color: #900;
 }
