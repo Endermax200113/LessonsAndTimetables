@@ -176,6 +176,9 @@ hr {
 
 #wrapper #articles article a:hover {
 	background-color: #afafaf;
+	padding: 8px;
+	margin-top: 7px;
+	margin-right: 9%;
 }
 
 #wrapper #articles article a:active {
