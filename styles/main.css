@@ -219,3 +219,8 @@ hr {
 	color: #050;
 	font-size: 1.05em;
 }
+
+#tasks {
+	background-color: #ffffff;
+	padding: 5px 0px 10px 0px;
+}
