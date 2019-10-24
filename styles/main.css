@@ -224,3 +224,30 @@ hr {
 	background-color: #ffffff;
 	padding: 5px 0px 10px 0px;
 }
+
+#centerBackground {
+	width: 100%;
+	padding: 2% 0;
+	margin: 20px 0;
+	border-bottom: 2px solid silver;
+	border-top: 2px solid silver;
+	float: left;
+	background: url(../images/backgroundCenter.png) center repeat-x #ffbb00;
+	background-size: 450px;
+	height: 200px;
+}
+
+#centerBackgroundIn {
+	margin-top: -10px;
+}
+
+#centerBackgroundIn h3 {
+	background-color: unset;
+	font-size: 1.3em;
+}
+
+#centerBackgroundIn p {
+	background-color: unset;
+	font-size: 1.1em;
+}
+
