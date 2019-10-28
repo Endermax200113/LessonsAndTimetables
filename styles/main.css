@@ -179,11 +179,13 @@ header, footer {
 	text-align: left;
 	margin-top: 1%;
 	margin-bottom: 1%;
+	transition: all.2s ease-in;
 }
 
 #bg {
 	background-color: #fff;
 	height: 80px;
+	transition: all.2s ease-in;
 }
 
 #menu {
