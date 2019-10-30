@@ -1,5 +1,4 @@
 document.write('<div class="ind"></div>');
-document.write('<div class="ind"></div>');
 document.write('<p id="not">Нажмите 1 из 2-х вариантов</p>');
 document.write('<p id="yes">Да</p>');
 document.write('<p id="no">Нет</p>');
