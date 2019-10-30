@@ -207,6 +207,7 @@ hr {
 	height: 0px;
 	border: 1px solid #ccc;
 	padding: 0;
+	background-color: #ccc;
 }
 
 #menuHrefs a {
