@@ -254,6 +254,23 @@ hr {
 	font-size: 1.1em;
 }
 
+.proger {
+	background-color: #ffffff;
+	padding: 5px 0px 10px 0px;
+}
+
+.progerSort {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	height: 50px
+}
+
+.progerLang {
+	margin: 0 25px;
+}
+
 @media (max-width: 424px) {
 	#wrapper #articles article {
 		width: 98%;
