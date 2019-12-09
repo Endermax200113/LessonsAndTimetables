@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>Для прогеров -> Теория алгоритмов -> Сортировка слиянием -> Объяснение [на стадии разработки]</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="description" content="Эта страница размещена для прогеров, чтобы помочь разобраться с некоторыми предметами." />
+		<meta name="keywords" content="для прогеров, прогер, помощь, код, предметы, теория алгоритмов, та, теория, алгоритмов, алгоритмы, непонятный предмет, непонятный, сортировка, сортировки, объяснение, объяснение сортировки, объяснение сортировки слиянием, слияние" />
+		<meta name="title" content="Объяснение сортировки слиянием">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="yandex-verification" content="6e2e0877a410f302" />
+		<meta name="google-site-verification" content="eFDm2eo-3TsE1xqp3eMY6n6C9DAb4knjo35lUNJQ-n8" />
+		<link rel="icon" href="/img/icon.ico">
+		<meta property="og:image" content="/img/@1x/preview.png">
+		<link rel="stylesheet" href="/css/styles.min.css">
+		<script type="text/javascript" src="/js/basic.js"></script>
+
+		<!-- Yandex.Metrika counter -->
+		<script type="text/javascript" src="/js/ym.js"></script>
+	
+		<noscript>
+			<div>
+				<img src="https://mc.yandex.ru/watch/55610314" style="position:absolute; left:-9999px;" alt="" />
+			</div>
+		</noscript>
+		<!-- /Yandex.Metrika counter -->
+	</head>
+
+	<body>
+		<div class="header" id="main">
+			<div class="headerLeft">
+				<a href="/" class="headerLeftLink">
+					<img src="/img/@2x/mainIcon.png" alt="Главная иконка" class="headerLeftLinkImage">
+					Оригинальный сайт
+				</a>
+				<img src="/img/@2x/menu.png" alt="Меню" class="headerLeftLinkMenu">
+			</div>
+			
+			<div class="headerRight">
+				<a href="/pages/home.html" class="headerRightLink">Домашка</a>
+				<a href="/pages/news.html" class="headerRightLink">Новости</a>
+				<a href="/pages/proger.html" class="headerRightLink">Для прогеров</a>
+				<a href="/pages/timetables.html" class="headerRightLink">Расписание</a>
+			</div>
+		</div>
+		<div class="headerEmpty"></div>
+		
+		<div class="content">
+			<div class="contentBlock">
+				<div class="contentBlockTitle">Сортировка слиянием</div>
+				<div class="contentBlockData">
+					<div class="contentBlockDataLabel">Сама судь</div>
+					<div class="contentBlockDataText">
+						Сортировка слиянием эффективнее, чем примеры алгоритмов сортировки, представленные выше, благодаря использованию рекурсии и подходу «разделяй и властвуй».
+						<br><br>
+						Массив делится на два подмассива, а затем происходит:
+						<br><br>
+						1. Сортировка левой половины массива (рекурсивно) <br>
+						2. Сортировка правой половины массива (рекурсивно) <br>
+						3. Слияние
+						<br><br>
+						На схеме показана работа рекурсивных вызовов. Для массивов, отмеченных стрелкой вниз, вызывается функция. Во время слияния возвращаются массивы со стрелкой вверх. Всё просто: мы следуем за стрелкой вниз к нижней части дерева, а затем возвращаемся и объединяем.
+						<br><br>
+						В примере массив 3 5 4 2 1 делится на 3 5 4 и 2 1 и так далее. При достижении «дна» начинается объединение и сортировка.
+					</div>
+
+					<div class="contentBlockDataLabel">Объяснение кода</div>
+					<div class="contentBlockDataText">
+						Сортировку можно расписать так:
+						<br><br>
+						1. Массив рекурсивно разбивается пополам, и каждая из половин делиться до тех пор, пока размер очередного подмассива не станет равным единице<br>
+						2. Далее выполняется операция алгоритма, называемая слиянием. Два единичных массива сливаются в общий результирующий массив, при этом из каждого выбирается меньший элемент (сортировка по возрастанию) и записывается в свободную левую ячейку результирующего массива. После чего из двух результирующих массивов собирается третий общий отсортированный массив, и так далее. В случае если один из массивов закончиться, элементы другого дописываются в собираемый массив<br>
+						3. В конце операции слияния, элементы перезаписываются из результирующего массива в исходный
+						<br><br>
+						Основная подпрограмма MergeSort рекурсивно разбивает и сортирует массив, а Merge отвечает за его слияние.
+						<br><br>
+						Так можно записать псевдокод основной подпрограммы: (смотреть на код, где находится функция (метод) mergeSort)
+						<br><br>
+						Эта подпрограмма выполняется только в том случае, если номер первого элемента меньше номера последнего. Как уже говорилось, из подпрограммы MergeSort вызывается подпрограмма Merge, которая выполняет операцию слияния. Перейдем к рассмотрению последней.
+						<br><br>
+						Работа Merge заключается в образовании упорядоченного результирующего массива путем слияния двух также отсортированных массивов меньших размеров. Вот псевдокод этой подпрограммы: (смотреть на код, где находится функция (метод) merge)
+					</div>
+
+					<div class="contentBlockDataLabel">Пример</div>
+					<div class="contentBlockDataText">
+						Разберем алгоритм сортировки слиянием на следующем примере. Имеется неупорядоченная последовательность чисел: 2, 6, 7, 1, 3, 5, 0, 4. После разбивки данной последовательности на единичные массивы, процесс сортирующего слияния (по возрастанию) будет выглядеть так:
+						<br><br>
+						2 6 7 1 3 5 0 4 <br>
+						2 6 1 7 3 5 0 4 <br>
+						1 2 6 7 0 3 4 5 <br>
+						0 1 2 3 4 5 6 7
+						<br><br>
+						Массив был разделен на единичные массивы, которые алгоритм сливает попарно до тех пор, пока не получится один массив, все элементы которого стоят на своих позициях.
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="footer">
+			<div class="footerTitle">Объяснение</div>
+			<a href="/pages/proger/ta/sort.html" class="footerButton">Назад</a>
+		</div>
+		
+		<script src="/js/main.js"></script>
+		<script src="/js/scripts.min.js"></script>
+	</body>
+</html>

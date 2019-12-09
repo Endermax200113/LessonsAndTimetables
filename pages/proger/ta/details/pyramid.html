@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>Для прогеров -> Теория алгоритмов -> Пирамидальная сортировка -> Объяснение [на стадии разработки]</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="description" content="Эта страница размещена для прогеров, чтобы помочь разобраться с некоторыми предметами." />
+		<meta name="keywords" content="для прогеров, прогер, помощь, код, предметы, теория алгоритмов, та, теория, алгоритмов, алгоритмы, непонятный предмет, непонятный, сортировка, сортировки, объяснение, объяснение сортировки, объяснение пирамидальной сортировки, пирамид" />
+		<meta name="title" content="Объяснение пирамидальной сортировки">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="yandex-verification" content="6e2e0877a410f302" />
+		<meta name="google-site-verification" content="eFDm2eo-3TsE1xqp3eMY6n6C9DAb4knjo35lUNJQ-n8" />
+		<link rel="icon" href="/img/icon.ico">
+		<meta property="og:image" content="/img/@1x/preview.png">
+		<link rel="stylesheet" href="/css/styles.min.css">
+		<script type="text/javascript" src="/js/basic.js"></script>
+
+		<!-- Yandex.Metrika counter -->
+		<script type="text/javascript" src="/js/ym.js"></script>
+	
+		<noscript>
+			<div>
+				<img src="https://mc.yandex.ru/watch/55610314" style="position:absolute; left:-9999px;" alt="" />
+			</div>
+		</noscript>
+		<!-- /Yandex.Metrika counter -->
+	</head>
+
+	<body>
+		<div class="header" id="main">
+			<div class="headerLeft">
+				<a href="/" class="headerLeftLink">
+					<img src="/img/@2x/mainIcon.png" alt="Главная иконка" class="headerLeftLinkImage">
+					Оригинальный сайт
+				</a>
+				<img src="/img/@2x/menu.png" alt="Меню" class="headerLeftLinkMenu">
+			</div>
+			
+			<div class="headerRight">
+				<a href="/pages/home.html" class="headerRightLink">Домашка</a>
+				<a href="/pages/news.html" class="headerRightLink">Новости</a>
+				<a href="/pages/proger.html" class="headerRightLink">Для прогеров</a>
+				<a href="/pages/timetables.html" class="headerRightLink">Расписание</a>
+			</div>
+		</div>
+		<div class="headerEmpty"></div>
+		
+		<div class="content">
+			<div class="contentBlock">
+				<div class="contentBlockTitle">Пирамидальная сортировка</div>
+				<div class="contentBlockData">
+					<div class="contentBlockDataLabel">Сама судь</div>
+					<div class="contentBlockDataText">
+						Для понимания работы пирамидального алгоритма сортировки нужно понять структуру, на которой он основан – пирамиду.
+						<br><br>
+						Пирамида или двоичная куча – это дерево, в котором каждый узел состоит в отношениях с дочерними узлами. Добавление нового узла начинается с левой позиции нижнего неполного уровня.
+						<br><br>
+						По мере движения вниз по дереву значения уменьшаются (min-heap) или увеличиваются (max-heap).
+						<br><br>
+						А теперь представим пирамиду в виде массива:
+						<br><br>
+						8 5 6 3 1 2 4
+						<br><br>
+						Чтение графа сверху вниз здесь представлено слева направо. Мы добились того, что позиция дочернего элемента по отношению к k-ому элементу в массиве – 2\*k+1 и 2\*k+2 (при условии, что индексация начинается с 0).
+						<br><br>
+						И наоборот, для k-го элемента дочерняя позиция всегда равна (k-1)/2.
+						<br><br>
+						С этими знаниями вы сделаете max-heap из любого массива! Для этого проверьте каждый элемент на условие, что каждый из его дочерних элементов имеет меньшее значение.
+						<br><br>
+						Условие верно? Тогда нужно менять местами один из дочерних элементов с родительским и повторить рекурсию с новым родительским элементом (он может всё ещё быть больше другого дочернего).
+						<br><br>
+						6 1 <em>8</em> 3 5 <b>2 4</b>: оба дочерних меньше родительского, оставляем как есть. <br>
+						6 1 8 <b>3 5</b> 2 4: 5 > 1, поэтому меняем их. Теперь рекурсивно проверяем 5. <br>
+						6 <em>5</em> 8 <b>3 1</b> 2 4: оба дочерних меньше 5, поэтому пропускаем. <br>
+						<em>6</em> <b>5 8</b> 3 1 2 4: 8 > 6, поэтому меняем их. <br>
+						8 5 6 3 1 2 4: мы получили пирамиду!
+						<br><br>
+						Мы научились строить пирамиду из массива, все остальное гораздо проще! Теперь меняем местами корень пирамиды с концом массива, и сокращаем массив на единицу.
+						<br><br>
+						Построим кучу из сокращенного массива и повторяем процесс:
+						<br><br>
+						<em>8</em> 5 6 3 1 2 <em>4</em> <br>
+						<em>4</em> 5 6 3 1 2 <b>8</b>: замена <br>
+						<em>6</em> 5 4 3 1 <em>2</em> <b>8</b>: сортировка <br>
+						2 5 4 3 1 <b>6 8</b>: замена <br>
+						<em>5</em> 2 4 2 <em>1</em> <b>6 8</b>: сортировка <br>
+						1 2 4 2 <b>5 6 8</b>: замена
+					</div>
+
+					<div class="contentBlockDataLabel">Объяснение кода</div>
+					<div class="contentBlockDataText">
+						Сорян, ребят, но это очень трудно объяснимо :(
+					</div>
+
+					<div class="contentBlockDataLabel">Пример</div>
+					<div class="contentBlockDataText">
+						Посмотрите на функцию heapify() – кажется, что все делается за O(1), верно? Но нет же: все портит рекурсивный вызов!
+						<br><br>
+						Готовы посчитать, сколько вызовов нужно в наихудшем сценарии? В худшем случае рекурсивный вызов дойдет до самой вершины пирамиды прыжками к родителям каждого узла в отношении i/2. Всего потребуется log n прыжков до вершины, значит, сложность равна O(log n).
+						<br><br>
+						В связи с циклами for, которые итерируют весь массив, сложность heapSort() равна O(n). Это дает нам суммарную сложность пирамидальной сортировки O(nlog n).
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="footer">
+			<div class="footerTitle">Объяснение</div>
+			<a href="/pages/proger/ta/sort.html" class="footerButton">Назад</a>
+		</div>
+		
+		<script src="/js/main.js"></script>
+		<script src="/js/scripts.min.js"></script>
+	</body>
+</html>

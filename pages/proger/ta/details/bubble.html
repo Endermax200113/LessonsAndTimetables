@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>Для прогеров -> Теория алгоритмов -> Сортировка пузырьком -> Объяснение [на стадии разработки]</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="description" content="Эта страница размещена для прогеров, чтобы помочь разобраться с некоторыми предметами." />
+		<meta name="keywords" content="для прогеров, прогер, помощь, код, предметы, теория алгоритмов, та, теория, алгоритмов, алгоритмы, непонятный предмет, непонятный, сортировка, сортировки, объяснение, объяснение сортировки, объяснение сортировки пузырьком, пузырёк" />
+		<meta name="title" content="Объяснение сортировки пузырьком">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="yandex-verification" content="6e2e0877a410f302" />
+		<meta name="google-site-verification" content="eFDm2eo-3TsE1xqp3eMY6n6C9DAb4knjo35lUNJQ-n8" />
+		<link rel="icon" href="/img/icon.ico">
+		<meta property="og:image" content="/img/@1x/preview.png">
+		<link rel="stylesheet" href="/css/styles.min.css">
+		<script type="text/javascript" src="/js/basic.js"></script>
+
+		<!-- Yandex.Metrika counter -->
+		<script type="text/javascript" src="/js/ym.js"></script>
+	
+		<noscript>
+			<div>
+				<img src="https://mc.yandex.ru/watch/55610314" style="position:absolute; left:-9999px;" alt="" />
+			</div>
+		</noscript>
+		<!-- /Yandex.Metrika counter -->
+	</head>
+	
+	<body>
+		<div class="header" id="main">
+			<div class="headerLeft">
+				<a href="/" class="headerLeftLink">
+					<img src="/img/@2x/mainIcon.png" alt="Главная иконка" class="headerLeftLinkImage">
+					Оригинальный сайт
+				</a>
+				<img src="/img/@2x/menu.png" alt="Меню" class="headerLeftLinkMenu">
+			</div>
+			
+			<div class="headerRight">
+				<a href="/pages/home.html" class="headerRightLink">Домашка</a>
+				<a href="/pages/news.html" class="headerRightLink">Новости</a>
+				<a href="/pages/proger.html" class="headerRightLink">Для прогеров</a>
+				<a href="/pages/timetables.html" class="headerRightLink">Расписание</a>
+			</div>
+		</div>
+		<div class="headerEmpty"></div>
+		
+		<div class="content">
+			<div class="contentBlock">
+				<div class="contentBlockTitle">Сортировка пузырьком</div>
+				<div class="contentBlockData">
+					<div class="contentBlockDataLabel">Сама судь</div>
+					<div class="contentBlockDataText">
+						Алгоритм просматривает массив и сравнивает каждую пару соседних элементов. Когда он встречает пару элементов, расположенных не по порядку, происходит замена двух элементов местами.
+						<br><br>
+						Вот шаги для сортировки массива чисел от наименьшего к большему:
+						<br><br>
+						<b>4 2</b> 1 5 3: два первых элемента расположены в массиве в неверном порядке. Меняем их. <br>
+						2 <b>4 1</b> 5 3: вторая пара элементов тоже «не в порядке». Меняем и их. <br>
+						2 1 <b>4 5</b> 3: а эти два элемента в верном порядке (4 < 5), поэтому оставляем как есть. <br>
+						2 1 4 <b>5 3</b>: очередная замена. <br>
+						2 1 4 3 5 : результат после одной итерации.
+						<br><br>
+						Для полной сортировки нужен еще один шаг. Третья итерация пройдет уже без замены. Так вы поймете, что массив отсортирован.
+					</div>
+
+					<div class="contentBlockDataLabel">Объяснение кода</div>
+					<div class="contentBlockDataText">
+						Функция входит в цикл while, в котором проходит весь массив и меняет элементы местами при необходимости.
+						<br><br>
+						Массив в алгоритме считается отсортированным. При первой замене доказывается обратное и запускается еще одна итерация.
+						<br><br>
+						Цикл останавливается, когда все пары элементов в массиве пропускаются без замен: (смотреть на код сортировки)
+						<br><br>
+						Нужно быть предельно осторожно с формулировкой условия замены!
+					</div>
+
+					<div class="contentBlockDataLabel">Пример</div>
+					<div class="contentBlockDataText">
+						Рассмотрим наихудший сценарий. Вот пример: <b>5 4 3 2 1</b>
+						<br><br>
+						При первой итерации 5 «всплывает на поверхность», при этом остальные элементы остаются в порядке убывания. Если нужно получить отсортированный массив, придется делать по одной итерации для каждого элемента, кроме 1, и еще одну итерацию для проверки, что в сумме составляет 5 итераций.
+						<br><br>
+						Попробуем расширить это утверждение для массива из n элементов, и мы получим n итераций. В коде это означает, что цикл while будет запускаться максимум n раз.
+						<br><br>
+						Каждая n-ая итерация по всему массиву (цикл for в коде) означает, что временная сложность в наихудшем случае будет равна O(n ^ 2).
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="footer">
+			<div class="footerTitle">Объяснение</div>
+			<a href="/pages/proger/ta/sort.html" class="footerButton">Назад</a>
+		</div>
+		
+		<script src="/js/main.js"></script>
+		<script src="/js/scripts.min.js"></script>
+	</body>
+</html>

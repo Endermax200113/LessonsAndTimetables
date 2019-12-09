@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>Для прогеров -> Теория алгоритмов -> Сортировка выбором -> Объяснение [на стадии разработки]</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="description" content="Эта страница размещена для прогеров, чтобы помочь разобраться с некоторыми предметами." />
+		<meta name="keywords" content="для прогеров, прогер, помощь, код, предметы, теория алгоритмов, та, теория, алгоритмов, алгоритмы, непонятный предмет, непонятный, сортировка, сортировки, объяснение, объяснение сортировки, объяснение сортировки выбором, выбор" />
+		<meta name="title" content="Объяснение сортировки выбором">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="yandex-verification" content="6e2e0877a410f302" />
+		<meta name="google-site-verification" content="eFDm2eo-3TsE1xqp3eMY6n6C9DAb4knjo35lUNJQ-n8" />
+		<link rel="icon" href="/img/icon.ico">
+		<meta property="og:image" content="/img/@1x/preview.png">
+		<link rel="stylesheet" href="/css/styles.min.css">
+		<script type="text/javascript" src="/js/basic.js"></script>
+
+		<!-- Yandex.Metrika counter -->
+		<script type="text/javascript" src="/js/ym.js"></script>
+	
+		<noscript>
+			<div>
+				<img src="https://mc.yandex.ru/watch/55610314" style="position:absolute; left:-9999px;" alt="" />
+			</div>
+		</noscript>
+		<!-- /Yandex.Metrika counter -->
+	</head>
+
+	<body>
+		<div class="header" id="main">
+			<div class="headerLeft">
+				<a href="/" class="headerLeftLink">
+					<img src="/img/@2x/mainIcon.png" alt="Главная иконка" class="headerLeftLinkImage">
+					Оригинальный сайт
+				</a>
+				<img src="/img/@2x/menu.png" alt="Меню" class="headerLeftLinkMenu">
+			</div>
+			
+			<div class="headerRight">
+				<a href="/pages/home.html" class="headerRightLink">Домашка</a>
+				<a href="/pages/news.html" class="headerRightLink">Новости</a>
+				<a href="/pages/proger.html" class="headerRightLink">Для прогеров</a>
+				<a href="/pages/timetables.html" class="headerRightLink">Расписание</a>
+			</div>
+		</div>
+		<div class="headerEmpty"></div>
+		
+		<div class="content">
+			<div class="contentBlock">
+				<div class="contentBlockTitle">Сортировка выбором</div>
+				<div class="contentBlockData">
+					<div class="contentBlockDataLabel">Сама судь</div>
+					<div class="contentBlockDataText">
+						Сортировка выбором тоже разделяет массив на сортированный и несортированный подмассивы. Но на этот раз сортированный подмассив формируется вставкой минимального элемента не отсортированного подмассива в конец сортированного, заменой:
+						<br><br>
+						3 5 <em>1</em> 2 4 <br>
+						<b>1</b> 5 3 <em>2</em> 4 <br>
+						<b>1 2</b> <em>3</em> 5 4 <br>
+						<b>1 2 3</b> 5 <em>4</em> <br>
+						<b>1 2 3 4</b> <em>5</em> <br>
+						<b>1 2 3 4</b> <em>5</em>
+					</div>
+
+					<div class="contentBlockDataLabel">Объяснение кода</div>
+					<div class="contentBlockDataText">
+						В каждой итерации вы предполагаете, что первый неотсортированный элемент минимален и итерируете по всем оставшимся элементам в поисках меньшего.
+						<br><br>
+						После нахождения текущего минимума неотсортированной части массива вы меняете его местами с первым элементом, и он уже часть отсортированного массива: (смотреть код)
+					</div>
+
+					<div class="contentBlockDataLabel">Пример</div>
+					<div class="contentBlockDataText">
+						При поиске минимума для длины массива проверяются все элементы, поэтому сложность равна O(n). Поиск минимума для каждого элемента массива равен O(n^2).
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="footer">
+			<div class="footerTitle">Объяснение</div>
+			<a href="/pages/proger/ta/sort.html" class="footerButton">Назад</a>
+		</div>
+		
+		<script src="/js/main.js"></script>
+		<script src="/js/scripts.min.js"></script>
+	</body>
+</html>
