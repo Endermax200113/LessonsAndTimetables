@@ -1,0 +1,62 @@
+//Сортировка слиянием
+
+#include <iostream>
+#include <time.h>
+#include <stdlib.h>
+
+using namespace std;
+
+void mergeSort(int arr[], int first, int last, int count);
+void merge(int arr[], int first, int last, int count);
+
+int main() {
+	//Ввод данных
+	int count;
+	cout << "Введите количество элементов массива -> ";
+	cin >> count;
+	int arr[count];
+	
+	//Рандом
+	srand(time(0));
+	cout << "Числа будут таковы -> ";
+	for (int i = 0; i < count; i++) {
+		arr[i] = 1 + rand() % 100;
+		cout << arr[i] << " ";
+	}
+	cout << endl;
+	
+	//Сортировка
+	mergeSort(arr, 0, count, count);
+	
+	//Вывод
+	cout << "Результат -> ";
+	for (int i = 0; i < count; i++) cout << arr[i] << " ";
+	
+	return 0;
+}
+
+void mergeSort(int arr[], int first, int last, int count) {
+	if (first < last) {
+		mergeSort(arr, first, (first + last) / 2, count);
+		mergeSort(arr, (first + last) / 2 + 1, last, count);
+		merge(arr, first, last, count);
+	}
+}
+
+void merge(int arr[], int first, int last, int count) {
+	int middle, start, final, j;
+	int mas[count];
+	middle = (first + last) / 2;
+	start = first;
+	final = middle + 1;
+	
+	for (j = first; j <= last; j++) if ((start <= middle) && ((final > last) || (arr[start] < arr[final]))) {
+		mas[j] = arr[start];
+		start++;
+	} else {
+		mas[j] = arr[final];
+		final++;
+	}
+	
+	for (j = first; j <= last; j++) arr[j] = mas[j]; 
+}

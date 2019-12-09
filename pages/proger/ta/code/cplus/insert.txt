@@ -1,0 +1,42 @@
+//Сортировка вставками
+
+#include <iostream>
+#include <time.h>
+#include <stdlib.h>
+
+using namespace std;
+
+int main() {
+	//Ввод данных
+	int count;
+	cout << "Введите количество элементов массива -> ";
+	cin >> count;
+	int arr[count];
+	
+	//Рандом
+	srand(time(0));
+	cout << "Числа будут таковы -> ";
+	for (int i = 0; i < count; i++) {
+		arr[i] = 1 + rand() % 100;
+		cout << arr[i] << " ";
+	}
+	cout << endl;
+	
+	//Сортировка
+	for (int i = 1; i < count; i++) {
+		int current = arr[i];
+		int j = i - 1;
+		while (j >= 0 && current < arr[j]) {
+			arr[j + 1] = arr[j];
+			j--;
+		}
+		
+		arr[j + 1] = current;
+	}
+	
+	//Вывод
+	cout << "Результат -> ";
+	for (int i = 0; i < count; i++) cout << arr[i] << " ";
+	
+	return 0;
+}
