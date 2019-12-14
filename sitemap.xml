@@ -1,16 +1,202 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
-    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-			http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
-	<url>
-		<loc>https://lessonsandtimetables.tk/</loc>
-  		<lastmod>2019-10-22T19:18:09+00:00</lastmod>
-  		<priority>1.00</priority>
-	</url>
+
+<url>
+  <loc>https://lessonsandtimetables.tk/</loc>
+  <lastmod>2019-12-13T14:35:11+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://lessonsandtimetables.tk/pages/home.html</loc>
+  <lastmod>2019-12-13T14:35:11+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lessonsandtimetables.tk/pages/proger.html</loc>
+  <lastmod>2019-12-13T14:35:11+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lessonsandtimetables.tk/pages/timetables.html</loc>
+  <lastmod>2019-12-13T14:35:11+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lessonsandtimetables.tk/pages/proger/mdk/subgr2/dhome1.html</loc>
+  <lastmod>2019-12-13T14:35:11+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lessonsandtimetables.tk/pages/proger/ta/sort.html</loc>
+  <lastmod>2019-12-13T14:35:11+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lessonsandtimetables.tk/pages/home/mdk.html</loc>
+  <lastmod>2019-12-13T14:35:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://lessonsandtimetables.tk/pages/proger/ta.html</loc>
+  <lastmod>2019-12-13T14:35:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://lessonsandtimetables.tk/pages/proger/logic.html</loc>
+  <lastmod>2019-12-13T14:35:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://lessonsandtimetables.tk/pages/proger/mdk.html</loc>
+  <lastmod>2019-12-13T14:35:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://lessonsandtimetables.tk/pages/proger/mdk/subgr2.html</loc>
+  <lastmod>2019-12-13T14:35:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://lessonsandtimetables.tk/pages/proger/ta/details/bubble.html</loc>
+  <lastmod>2019-12-13T14:35:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://lessonsandtimetables.tk/pages/proger/ta/details/insert.html</loc>
+  <lastmod>2019-12-13T14:35:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://lessonsandtimetables.tk/pages/proger/ta/details/select.html</loc>
+  <lastmod>2019-12-13T14:35:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://lessonsandtimetables.tk/pages/proger/ta/details/merger.html</loc>
+  <lastmod>2019-12-13T14:35:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://lessonsandtimetables.tk/pages/proger/ta/details/pyramid.html</loc>
+  <lastmod>2019-12-13T14:35:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://lessonsandtimetables.tk/pages/home/mdk/subgr2.html</loc>
+  <lastmod>2019-12-13T14:35:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://lessonsandtimetables.tk/pages/proger/logic/offsets.html</loc>
+  <lastmod>2019-12-13T14:35:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://lessonsandtimetables.tk/pages/home/mdk/subgr2/home1.html</loc>
+  <lastmod>2019-12-13T14:35:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://lessonsandtimetables.tk/pages/proger/logic/offsets/var1.html</loc>
+  <lastmod>2019-12-13T14:35:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://lessonsandtimetables.tk/pages/proger/logic/offsets/var2.html</loc>
+  <lastmod>2019-12-13T14:35:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://lessonsandtimetables.tk/pages/proger/logic/offsets/lectures.html</loc>
+  <lastmod>2019-12-13T14:35:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://lessonsandtimetables.tk/pages/proger/logic/offsets/lectures/lec1.html</loc>
+  <lastmod>2019-12-13T14:35:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://lessonsandtimetables.tk/pages/proger/logic/offsets/lectures/lec3.html</loc>
+  <lastmod>2019-12-13T14:35:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://lessonsandtimetables.tk/pages/proger/logic/offsets/lectures/lec5.html</loc>
+  <lastmod>2019-12-13T14:35:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://lessonsandtimetables.tk/pages/proger/logic/offsets/lectures/lec6.html</loc>
+  <lastmod>2019-12-13T14:35:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://lessonsandtimetables.tk/pages/proger/logic/offsets/lectures/lec8.html</loc>
+  <lastmod>2019-12-13T14:35:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://lessonsandtimetables.tk/pages/proger/logic/offsets/lectures/lec9.html</loc>
+  <lastmod>2019-12-13T14:35:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://lessonsandtimetables.tk/pages/proger/logic/offsets/lectures/lec10.html</loc>
+  <lastmod>2019-12-13T14:35:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://lessonsandtimetables.tk/pages/proger/logic/offsets/lectures/lec11.html</loc>
+  <lastmod>2019-12-13T14:35:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://lessonsandtimetables.tk/pages/proger/logic/offsets/lectures/lec13.html</loc>
+  <lastmod>2019-12-13T14:35:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://lessonsandtimetables.tk/pages/proger/logic/offsets/lectures/lec14.html</loc>
+  <lastmod>2019-12-13T14:35:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://lessonsandtimetables.tk/pages/proger/logic/offsets/lectures/lec16.html</loc>
+  <lastmod>2019-12-13T14:35:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://lessonsandtimetables.tk/pages/proger/logic/offsets/lectures/lec2.html</loc>
+  <lastmod>2019-12-13T14:35:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://lessonsandtimetables.tk/pages/proger/logic/offsets/lectures/lec4.html</loc>
+  <lastmod>2019-12-13T14:35:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://lessonsandtimetables.tk/pages/proger/logic/offsets/lectures/lec7.html</loc>
+  <lastmod>2019-12-13T14:35:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://lessonsandtimetables.tk/pages/proger/logic/offsets/lectures/lec12.html</loc>
+  <lastmod>2019-12-13T14:35:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://lessonsandtimetables.tk/pages/proger/logic/offsets/lectures/lec15.html</loc>
+  <lastmod>2019-12-13T14:35:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+
 
 </urlset>
