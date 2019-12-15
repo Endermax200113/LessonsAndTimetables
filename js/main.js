@@ -1,4 +1,4 @@
-var version = "0.0.3.30";
+var version = "0.0.3.31";
 
 var headerMenu = fromElement(".headerLeftLinkMenu");
 var header = fromElement(".header");
