@@ -1,0 +1,9 @@
+basic = '
+	[
+		{
+			"preview" : "/pages/news/site/news1/preview.png",
+			"title" : "Это тестовая новость!",
+			"important" : true
+		}
+	]
+';
