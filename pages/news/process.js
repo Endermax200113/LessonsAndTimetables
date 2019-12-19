@@ -29,7 +29,6 @@ var newsSite = fromElement("#newsSite");
 		let glNumber = dataSite[i].glNumber;
 		let day = dataSite[i].day;
 		let month = dataSite[i].month;
-		let year = dataSite[i].year;
 
 		
 

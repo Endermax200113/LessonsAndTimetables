@@ -11,7 +11,6 @@ var infoSite = [
 		"number" : 1,
 		"glNumber" : 1,
 		"day" : 18,
-		"month" : 12,
-		"year" : 2019
+		"month" : 12
 	}
 ]
