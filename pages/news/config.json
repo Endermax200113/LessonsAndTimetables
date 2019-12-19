@@ -1,28 +1,5 @@
-news = '
-	[
-		{
-			"count" : 1,
-			"last" : [
-				{
-					"link" : "/pages/news/site/news1/main.html",
-					"config" : "/pages/news/site/news1/config.json"
-				}
-			]
-		},
-		{
-			"count" : 0
-		},
-		{
-			"count" : 0
-		},
-		{
-			"count" : 1,
-			"last" : [
-				{
-					"link" : "/pages/news/site/news1/main.html",
-					"config" : "/pages/news/site/news1/config.json"
-				}
-			]
-		}
-	]
-';
+var news = [
+	{
+		"count" : 1
+	}
+]

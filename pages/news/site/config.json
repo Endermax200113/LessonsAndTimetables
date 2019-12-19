@@ -1,0 +1,17 @@
+var site = [
+	{
+		"count" : 1
+	}
+]
+
+var infoSite = [
+	{
+		"title" : "Это тестовая новость!",
+		"important" : true,
+		"number" : 1,
+		"glNumber" : 1,
+		"day" : 18,
+		"month" : 12,
+		"year" : 2019
+	}
+]

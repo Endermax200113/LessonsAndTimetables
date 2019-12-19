@@ -45,16 +45,27 @@
 		<div class="headerEmpty"></div>
 		
 		<div class="content">
-			Эта страница уже в разработке. Но появится она не скоро
-		<!--
+			Эта страница разрабатывается. Скоро она появится
+			<!--
 			<div class="contentBlock">
 				<div class="contentBlockTitle">Последние новости</div>
 				<div class="contentBlockData">
-					<div class="contentBlockDataNews">
+					<div class="contentBlockDataNews" id="newsLast">
 						<div class="contentBlockDataNewsButton">
-							<img src="" alt="" class="contentBlockDataNewsButtonImage">
-							<div class="contentBlockDataNewsButtonTitle"></div>
-							<div class="contentBlockDataNewsButtonImpTrue"></div>
+							<div class="contentBlockDataNewsButtonDate">18 дек</div>
+							<div class="contentBlockDataNewsButtonTitle">Это тестовая новость!</div>
+							<div class="contentBlockDataNewsButtonImp">Важное</div>
+						</div>
+
+						<div class="contentBlockDataNewsButton">
+							<div class="contentBlockDataNewsButtonDate">19 дек</div>
+							<div class="contentBlockDataNewsButtonTitle">Это другая новость!</div>
+						</div>
+
+						<div class="contentBlockDataNewsButton">
+							<div class="contentBlockDataNewsButtonDate">20 дек</div>
+							<div class="contentBlockDataNewsButtonTitle">Это важная тестовая новость!</div>
+							<div class="contentBlockDataNewsButtonImp">Важное</div>
 						</div>
 					</div>
 				</div>
@@ -63,21 +74,25 @@
 			<div class="contentBlock">
 				<div class="contentBlockTitle">Новости колледжа</div>
 				<div class="contentBlockData">
-					
+					<div class="contentBlockDataNews" id="newsCollege">
+						
+					</div>
 				</div>
 			</div>
 
 			<div class="contentBlock">
 				<div class="contentBlockTitle">Новости группы</div>
 				<div class="contentBlockData">
-					
+					<div class="contentBlockDataNews" id="newsGroup">
+						
+					</div>
 				</div>
 			</div>
 
 			<div class="contentBlock">
 				<div class="contentBlockTitle">Новости сайта</div>
 				<div class="contentBlockData">
-					<div class="contentBlockDataNews">
+					<div class="contentBlockDataNews" id="newsSite">
 						<div class="contentBlockDataNewsButton">
 							<img src="" alt="" class="contentBlockDataNewsButtonImage">
 							<div class="contentBlockDataNewsButtonTitle"></div>
@@ -85,7 +100,8 @@
 						</div>
 					</div>
 				</div>
-			</div>-->
+			</div>
+			-->
 		</div>
 		
 		<div class="footer">
@@ -93,6 +109,11 @@
 			<a href="/" class="footerButton">Назад</a>
 		</div>
 		
+		<script src="news/college/config.json"></script>
+		<script src="news/group/config.json"></script>
+		<script src="news/site/config.json"></script>
+		<script src="news/config.json"></script>
+		<script src="news/process.js"></script>
 		<script src="/js/main.js"></script>
 		<script src="/js/scripts.min.js"></script>
 	</body>

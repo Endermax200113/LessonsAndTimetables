@@ -25,6 +25,7 @@ body
 	position: fixed
 	transition: all .3s ease
 	padding: 0px 20px
+	z-index: 100
 	
 	&Empty
 		width: 100%
@@ -114,6 +115,7 @@ body
 	flex-direction: column
 	align-items: center
 	justify-content: space-around
+	text-align: center
 	
 	&Block
 		width: calc(100% - 40px)
@@ -258,6 +260,73 @@ body
 
 			&Image
 				height: 100%
+
+			&News
+				display: flex
+				flex-direction: column
+				justify-content: center
+				align-items: center
+				width: calc(100% + 40px)
+				height: calc(100% + 20px)
+				margin: -10px 0px
+
+				&Button
+					position: relative
+					display: flex
+					flex-direction: row
+					justify-content: space-between
+					align-items: center
+					height: 50px
+					width: 100%
+					overflow: hidden
+					border-top: 1px
+					border-bottom: 1px
+					border-left: 0px
+					border-right: 0px
+					border-style: solid
+					border-color: #555
+					cursor: pointer
+					z-index: 3
+					transition: all .3s ease
+
+					&:hover
+						background-color: #fff1
+
+					&:active
+						background-color: #8881
+
+					&Date
+						position: absolute
+						color: #fff
+						width: 70px
+						height: 100%
+						padding: 0px 20px 
+						border-right: 2px solid #555
+						z-index: 2
+						display: flex
+						flex-direction: row
+						justify-content: center
+						align-items: center
+
+					&Title
+						color: #fff
+						width: 80%
+						margin: 0 auto
+						z-index: 2
+
+					&Imp
+						z-index: 2
+						position: absolute
+						font-family: sans-serif
+						color: #fff
+						background-color: #f42
+						padding: 45px 50px 5px 50px
+						text-align: center
+						transform: rotate(25deg)
+						right: -55px
+						top: -33px
+						font-size: 15px
+						z-index: 2
 
 .footer
 	flex: 0 0 auto
