@@ -12,14 +12,32 @@ var newsSite = fromElement("#newsSite");
 	var dataCollege = infoCollege;
 	var dataGroup = infoGroup;
 	var dataSite = infoSite;
-	let j = 0;
+	let listLast = 0;
 
 	for (let i = countNewsCollege - 1; i >= 0; i--) {
-		
+		let title = dataCollege[i].title;
+		let important = dataCollege[i].important;
+		let number = dataCollege[i].number;
+		let glNumber = dataCollege[i].glNumber;
+		let day = dataCollege[i].day;
+		let month = dataCollege[i].month;
+
+
+
+		listLast++;
 	}
 
 	for (let i = countNewsGroup - 1; i >= 0; i--) {
+		let title = dataGroup[i].title;
+		let important = dataGroup[i].important;
+		let number = dataGroup[i].number;
+		let glNumber = dataGroup[i].glNumber;
+		let day = dataGroup[i].day;
+		let month = dataGroup[i].month;
 
+		
+		
+		listLast++;
 	}
 
 	for (let i = countNewsSite - 1; i >= 0; i--) {
@@ -32,7 +50,7 @@ var newsSite = fromElement("#newsSite");
 
 		
 
-		j++;
+		listLast++;
 	}
 }
 
