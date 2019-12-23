@@ -1,11 +1,10 @@
-var college = [
-	{
-		"count" : 0
-	}
-]
-
 var infoCollege = [
 	{
-		
+		"title" : "Это тестовая новость!",
+		"important" : false,
+		"number" : 1,
+		"glNumber" : 3,
+		"day" : 19,
+		"month" : 12
 	}
 ]

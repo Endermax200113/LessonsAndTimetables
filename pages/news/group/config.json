@@ -1,11 +1,10 @@
-var group = [
-	{
-		"count" : 0
-	}
-]
-
 var infoGroup = [
 	{
-		
+		"title" : "Это тестовая новость!",
+		"important" : false,
+		"number" : 1,
+		"glNumber" : 4,
+		"day" : 22,
+		"month" : 12
 	}
 ]

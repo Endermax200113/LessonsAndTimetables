@@ -1,10 +1,12 @@
-var site = [
-	{
-		"count" : 1
-	}
-]
-
 var infoSite = [
+	{
+		"title" : "Это тестовая новость!",
+		"important" : true,
+		"number" : 2,
+		"glNumber" : 2,
+		"day" : 18,
+		"month" : 12
+	},
 	{
 		"title" : "Это тестовая новость!",
 		"important" : true,
