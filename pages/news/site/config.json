@@ -1,16 +1,28 @@
 var infoSite = [
 	{
-		"title" : "Это тестовая новость!",
+		"title" : "Прsоssвgка!",
 		"important" : true,
-		"number" : 2,
+		"glNumber" : 10,
+		"day" : 24,
+		"month" : 12
+	},
+	{
+		"title" : "Проверdfgка!",
+		"important" : false,
+		"glNumber" : 8,
+		"day" : 24,
+		"month" : 12
+	},
+	{
+		"title" : "Проверка!",
+		"important" : true,
 		"glNumber" : 2,
 		"day" : 18,
 		"month" : 12
 	},
 	{
-		"title" : "Это тестовая новость!",
-		"important" : true,
-		"number" : 1,
+		"title" : "Это ещЁ тестовая новость!",
+		"important" : false,
 		"glNumber" : 1,
 		"day" : 18,
 		"month" : 12

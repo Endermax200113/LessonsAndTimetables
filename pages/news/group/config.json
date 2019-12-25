@@ -1,8 +1,21 @@
 var infoGroup = [
 	{
+		"title" : "sdfsdfdgdfs",
+		"important" : false,
+		"glNumber" : 9,
+		"day" : 24,
+		"month" : 12
+	},
+	{
+		"title" : "sdfs",
+		"important" : true,
+		"glNumber" : 5,
+		"day" : 24,
+		"month" : 12
+	},
+	{
 		"title" : "Это тестовая новость!",
 		"important" : false,
-		"number" : 1,
 		"glNumber" : 4,
 		"day" : 22,
 		"month" : 12

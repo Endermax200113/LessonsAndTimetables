@@ -1,8 +1,21 @@
 var infoCollege = [
 	{
-		"title" : "Это тестовая новость!",
+		"title" : "khukgkukhik!!",
+		"important" : true,
+		"glNumber" : 7,
+		"day" : 24,
+		"month" : 12
+	},
+	{
+		"title" : "sdfdfgsd!!",
 		"important" : false,
-		"number" : 1,
+		"glNumber" : 6,
+		"day" : 24,
+		"month" : 12
+	},
+	{
+		"title" : "Разнообразние!!!",
+		"important" : false,
 		"glNumber" : 3,
 		"day" : 19,
 		"month" : 12
