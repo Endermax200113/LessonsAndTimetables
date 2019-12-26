@@ -2,6 +2,55 @@ var infoGroup = [
 	{
 		"title" : "sdfsdfdgdfs",
 		"important" : false,
+		"glNumber" : 21,
+		"day" : 25,
+		"month" : 12
+	},
+	{
+		"title" : "sdfsdfdgdfs",
+		"important" : false,
+		"glNumber" : 20,
+		"day" : 25,
+		"month" : 12
+	},
+	{
+		"title" : "sdfs",
+		"important" : true,
+		"glNumber" : 19,
+		"day" : 25,
+		"month" : 12
+	},
+	{
+		"title" : "Это тестовая новость!",
+		"important" : false,
+		"glNumber" : 18,
+		"day" : 25,
+		"month" : 12
+	},
+	{
+		"title" : "sdfsdfdgdfs",
+		"important" : false,
+		"glNumber" : 17,
+		"day" : 25,
+		"month" : 12
+	},
+	{
+		"title" : "sdfs",
+		"important" : true,
+		"glNumber" : 16,
+		"day" : 25,
+		"month" : 12
+	},
+	{
+		"title" : "Это тестовая новость!",
+		"important" : false,
+		"glNumber" : 15,
+		"day" : 25,
+		"month" : 12
+	},
+	{
+		"title" : "sdfsdfdgdfs",
+		"important" : false,
 		"glNumber" : 9,
 		"day" : 24,
 		"month" : 12

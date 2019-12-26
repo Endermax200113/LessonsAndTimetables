@@ -1,5 +1,33 @@
 var infoSite = [
 	{
+		"title" : "gкаgsdfыввавfgg!",
+		"important" : true,
+		"glNumber" : 14,
+		"day" : 25,
+		"month" : 12
+	},
+	{
+		"title" : "gкаgsdfывваываывfgg!",
+		"important" : false,
+		"glNumber" : 13,
+		"day" : 25,
+		"month" : 12
+	},
+	{
+		"title" : "gкаgfgg!",
+		"important" : false,
+		"glNumber" : 12,
+		"day" : 25,
+		"month" : 12
+	},
+	{
+		"title" : "gка!",
+		"important" : false,
+		"glNumber" : 11,
+		"day" : 25,
+		"month" : 12
+	},
+	{
 		"title" : "Прsоssвgка!",
 		"important" : true,
 		"glNumber" : 10,

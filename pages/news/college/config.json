@@ -2,6 +2,55 @@ var infoCollege = [
 	{
 		"title" : "khukgkukhik!!",
 		"important" : true,
+		"glNumber" : 28,
+		"day" : 25,
+		"month" : 12
+	},
+	{
+		"title" : "khukgkukhik!!",
+		"important" : true,
+		"glNumber" : 27,
+		"day" : 25,
+		"month" : 12
+	},
+	{
+		"title" : "sdfdfgsd!!",
+		"important" : false,
+		"glNumber" : 26,
+		"day" : 25,
+		"month" : 12
+	},
+	{
+		"title" : "Разнообразние!!!",
+		"important" : false,
+		"glNumber" : 25,
+		"day" : 25,
+		"month" : 12
+	},
+	{
+		"title" : "khukgkukhik!!",
+		"important" : true,
+		"glNumber" : 24,
+		"day" : 25,
+		"month" : 12
+	},
+	{
+		"title" : "sdfdfgsd!!",
+		"important" : false,
+		"glNumber" : 23,
+		"day" : 25,
+		"month" : 12
+	},
+	{
+		"title" : "Разнообразние!!!",
+		"important" : false,
+		"glNumber" : 22,
+		"day" : 25,
+		"month" : 12
+	},
+	{
+		"title" : "khukgkukhik!!",
+		"important" : true,
 		"glNumber" : 7,
 		"day" : 24,
 		"month" : 12
