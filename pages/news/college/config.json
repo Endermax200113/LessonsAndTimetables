@@ -1,3 +1,10 @@
 var infoCollege = [
-	
+	{
+		"glNumber": 2,
+		"number": 0,
+		"title": "Расписание звонков",
+		"important": true,
+		"day": 28,
+		"month": 12
+	}
 ]
