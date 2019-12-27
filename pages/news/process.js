@@ -6,6 +6,9 @@ var newsSite = fromElement("#newsSite");
 var dataCollege = infoCollege;
 var dataGroup = infoGroup;
 var dataSite = infoSite;
+var newDataCollege = [];
+var newDataGroup = [];
+var newDataSite = [];
 var arrNews = [];
 var sortArrNews = [];
 
@@ -15,13 +18,26 @@ for (let i = 0; i < dataCollege.length; i++) {
 	let glNumber = dataCollege[i].glNumber;
 	let day = dataCollege[i].day;
 	let month = dataCollege[i].month;
+	let number = dataCollege[i].number;
 
 	arrNews[arrNews.length] = {
 		glNumber: glNumber,
 		title: title,
 		important: important,
 		day: day,
-		month: month
+		month: month,
+		type: "college",
+		number: number
+	};
+
+	newDataCollege[i] = {
+		title: title,
+		important: important,
+		glNumber: glNumber,
+		day: day,
+		month: month,
+		type: "college",
+		number: number
 	};
 }
 
@@ -31,13 +47,26 @@ for (let i = 0; i < dataGroup.length; i++) {
 	let glNumber = dataGroup[i].glNumber;
 	let day = dataGroup[i].day;
 	let month = dataGroup[i].month;
+	let number = dataGroup[i].number;
 
 	arrNews[arrNews.length] = {
 		glNumber: glNumber,
 		title: title,
 		important: important,
 		day: day,
-		month: month
+		month: month,
+		type: "group",
+		number: number
+	};
+
+	newDataGroup[i] = {
+		title: title,
+		important: important,
+		glNumber: glNumber,
+		day: day,
+		month: month,
+		type: "group",
+		number: number
 	};
 }
 
@@ -47,14 +76,27 @@ for (let i = 0; i < dataSite.length; i++) {
 	let glNumber = dataSite[i].glNumber;
 	let day = dataSite[i].day;
 	let month = dataSite[i].month;
+	let number = dataSite[i].number;
 
 	arrNews[arrNews.length] = {
 		glNumber: glNumber,
 		title: title,
 		important: important,
 		day: day,
-		month: month
+		month: month,
+		type: "site",
+		number: number
 	}
+
+	newDataSite[i] = {
+		title: title,
+		important: important,
+		glNumber: glNumber,
+		day: day,
+		month: month,
+		type: "site",
+		number: number
+	};
 }
 
 let count = dataSite.length + dataGroup.length + dataCollege.length;
@@ -66,7 +108,7 @@ let countLast = 0;
 for (let i = count - 1; i >= 0; i--) {
 	if (countLast == 7) {
 		newsLast.innerHTML +=
-		'<a href="" class="contentBlockDataNewsButton">' +
+		'<a href="news/last.html" class="contentBlockDataNewsButton">' +
 			'<div class="contentBlockDataNewsButtonOther">' +
 				"Посмотреть все новости" + 
 			"</div>" +
@@ -77,30 +119,16 @@ for (let i = count - 1; i >= 0; i--) {
 
 	let data = sortArrNews[i];
 
-	if (!data.important) {
-		newsLast.innerHTML += 
-		'<a href="" class="contentBlockDataNewsButton">' + 
-			'<div class="contentBlockDataNewsButtonDate">' +
-				data.day + " " + parseMonth(data.month) +
-			"</div>" + 
-			'<div class="contentBlockDataNewsButtonTitle">' +
-				data.title + 
-			"</div>" +
-		"</a>";
-	} else {
-		newsLast.innerHTML += 
-		'<a href="" class="contentBlockDataNewsButton">' + 
-			'<div class="contentBlockDataNewsButtonDate">' +
-				data.day + " " + parseMonth(data.month) +
-			"</div>" + 
-			'<div class="contentBlockDataNewsButtonTitle">' +
-				data.title + 
-			"</div>" +
-			'<div class="contentBlockDataNewsButtonImp">' +
-				"Важное!"
-			"</div>" +
-		"</a>";
-	} 
+	newsLast.innerHTML += 
+	'<a href="' + "news/" + data.type + "/news" + data.number + '.html" class="contentBlockDataNewsButton">' + 
+		'<div class="contentBlockDataNewsButtonDate">' +
+			data.day + " " + parseMonth(data.month) +
+		"</div>" + 
+		'<div class="contentBlockDataNewsButtonTitle">' +
+			data.title + 
+		"</div>" +
+		parseImportant(data.important) +
+	"</a>";
 
 	countLast++;
 }
@@ -108,7 +136,7 @@ for (let i = count - 1; i >= 0; i--) {
 for (let i = 0; i < dataCollege.length; i++) {
 	if (i == 7) {
 		newsCollege.innerHTML += 
-		'<a href="" class="contentBlockDataNewsButton">' +
+		'<a href="news/college.html" class="contentBlockDataNewsButton">' +
 			'<div class="contentBlockDataNewsButtonOther">' +
 				"Посмотреть все новости колледжа" + 
 			"</div>" +
@@ -117,38 +145,24 @@ for (let i = 0; i < dataCollege.length; i++) {
 		break;
 	}
 
-	let data = dataCollege[i];
+	let data = newDataCollege[i];
 
-	if (!data.important) {
-		newsCollege.innerHTML += 
-		'<a href="" class="contentBlockDataNewsButton">' + 
-			'<div class="contentBlockDataNewsButtonDate">' +
-				data.day + " " + parseMonth(data.month) +
-			"</div>" + 
-			'<div class="contentBlockDataNewsButtonTitle">' +
-				data.title + 
-			"</div>" +
-		"</a>";
-	} else {
-		newsCollege.innerHTML += 
-		'<a href="" class="contentBlockDataNewsButton">' + 
-			'<div class="contentBlockDataNewsButtonDate">' +
-				data.day + " " + parseMonth(data.month) +
-			"</div>" + 
-			'<div class="contentBlockDataNewsButtonTitle">' +
-				data.title + 
-			"</div>" +
-			'<div class="contentBlockDataNewsButtonImp">' +
-				"Важное!"
-			"</div>" +
-		"</a>";
-	}
+	newsCollege.innerHTML += 
+	'<a href="' + "news/" + data.type + "/news" + data.number + '.html" class="contentBlockDataNewsButton">' + 
+		'<div class="contentBlockDataNewsButtonDate">' +
+			data.day + " " + parseMonth(data.month) +
+		"</div>" + 
+		'<div class="contentBlockDataNewsButtonTitle">' +
+			data.title + 
+		"</div>" +
+		parseImportant(data.important) +
+	"</a>";
 }
 
 for (let i = 0; i < dataGroup.length; i++) {
 	if (i == 7) {
 		newsGroup.innerHTML += 
-		'<a href="" class="contentBlockDataNewsButton">' +
+		'<a href="news/group.html" class="contentBlockDataNewsButton">' +
 			'<div class="contentBlockDataNewsButtonOther">' +
 				"Посмотреть все новости группы" + 
 			"</div>" +
@@ -157,38 +171,24 @@ for (let i = 0; i < dataGroup.length; i++) {
 		break;
 	}
 
-	let data = dataGroup[i];
+	let data = newDataGroup[i];
 
-	if (!data.important) {
-		newsGroup.innerHTML += 
-		'<a href="" class="contentBlockDataNewsButton">' + 
-			'<div class="contentBlockDataNewsButtonDate">' +
-				data.day + " " + parseMonth(data.month) +
-			"</div>" + 
-			'<div class="contentBlockDataNewsButtonTitle">' +
-				data.title + 
-			"</div>" +
-		"</a>";
-	} else {
-		newsGroup.innerHTML += 
-		'<a href="" class="contentBlockDataNewsButton">' + 
-			'<div class="contentBlockDataNewsButtonDate">' +
-				data.day + " " + parseMonth(data.month) +
-			"</div>" + 
-			'<div class="contentBlockDataNewsButtonTitle">' +
-				data.title + 
-			"</div>" +
-			'<div class="contentBlockDataNewsButtonImp">' +
-				"Важное!"
-			"</div>" +
-		"</a>";
-	}
+	newsGroup.innerHTML += 
+	'<a href="' + "news/" + data.type + "/news" + data.number + '.html" class="contentBlockDataNewsButton">' + 
+		'<div class="contentBlockDataNewsButtonDate">' +
+			data.day + " " + parseMonth(data.month) +
+		"</div>" + 
+		'<div class="contentBlockDataNewsButtonTitle">' +
+			data.title + 
+		"</div>" +
+		parseImportant(data.important) +
+	"</a>";
 }
 
 for (let i = 0; i < dataSite.length; i++) {
 	if (i == 7) {
 		newsSite.innerHTML += 
-		'<a href="" class="contentBlockDataNewsButton">' +
+		'<a href="news/site.html" class="contentBlockDataNewsButton">' +
 			'<div class="contentBlockDataNewsButtonOther">' +
 				"Посмотреть все новости сайта" + 
 			"</div>" +
@@ -197,32 +197,18 @@ for (let i = 0; i < dataSite.length; i++) {
 		break;
 	}
 
-	let data = dataSite[i];
+	let data = newDataSite[i];
 
-	if (!data.important) {
-		newsSite.innerHTML += 
-		'<a href="" class="contentBlockDataNewsButton">' + 
-			'<div class="contentBlockDataNewsButtonDate">' +
-				data.day + " " + parseMonth(data.month) +
-			"</div>" + 
-			'<div class="contentBlockDataNewsButtonTitle">' +
-				data.title + 
-			"</div>" +
-		"</a>";
-	} else {
-		newsSite.innerHTML += 
-		'<a href="" class="contentBlockDataNewsButton">' + 
-			'<div class="contentBlockDataNewsButtonDate">' +
-				data.day + " " + parseMonth(data.month) +
-			"</div>" + 
-			'<div class="contentBlockDataNewsButtonTitle">' +
-				data.title + 
-			"</div>" +
-			'<div class="contentBlockDataNewsButtonImp">' +
-				"Важное!"
-			"</div>" +
-		"</a>";
-	}
+	newsSite.innerHTML += 
+	'<a href="' + "news/" + data.type + "/news" + data.number + '.html" class="contentBlockDataNewsButton">' + 
+		'<div class="contentBlockDataNewsButtonDate">' +
+			data.day + " " + parseMonth(data.month) +
+		"</div>" + 
+		'<div class="contentBlockDataNewsButtonTitle">' +
+			data.title + 
+		"</div>" +
+		parseImportant(data.important) +
+	"</a>";
 }
 
 function find(arr, number) {
@@ -243,4 +229,12 @@ function parseMonth(number) {
 	else if (number == 11) return "ноя";
 	else if (number == 12) return "дек";
 	else return null;
+}
+
+function parseImportant(imp) {
+	if (imp) {
+		return '<div class="contentBlockDataNewsButtonImp">' +
+			"Важное!" +
+		"</div>";
+	} else return "";
 }
