@@ -1,0 +1,102 @@
+#include <iostream>
+#include <ctime>
+#include <cstdlib>
+
+using namespace std;
+
+void random(int *arr, int size);
+void sort(int *arr, int count);
+int find(int *arr, int size, int key);
+
+int main() {
+	setlocale(0, "rus");
+	
+	//Переменные
+	int size, index, key;
+	
+	//Ввод данных
+	cout << "Введите количество элементов массива -> ";
+	cin >> size;
+	int arr[size];
+	
+	//Рандом
+	random(arr, size);
+	
+	//Сортировка4r
+	sort(arr, size);
+	cout << "Новые числа будут таковы -> ";
+	for (int i = 0; i < size; i++) cout << arr[i] << " ";
+	cout << endl;
+	
+	//Ввод данных
+	cout << "Введите любое число -> ";
+	cin >> key;
+	
+	//Поиск
+	index = find(arr, size, key);
+	
+	//Результат
+	if (index != -1) cout << "Число " << key << " найдено по номеру " << index;
+	else cout << "Число не найдено!";
+}
+
+void random(int *arr, int size) {
+	srand(time(0));
+	for (int i = 0; i < size; i++) arr[i] = 1 + rand() % 100;
+}
+
+void sort(int *arr, int count) {
+	for (int i = 1; i < count; i++) {
+		int current = arr[i];
+		int j = i - 1;
+		while (j >= 0 && current < arr[j]) {
+			arr[j + 1] = arr[j];
+			j--;
+		}
+		
+		arr[j + 1] = current;
+	}
+}
+
+int find(int *arr, int size, int key) {
+	int first = 0, second = 2, lastIndex;
+	
+	for (int i = 0; i < size; i++) {
+		if (i == 0 && i == 1) {
+			if (arr[i] == key) return i;
+			else {
+				lastIndex = i;
+				continue;
+			}
+		} else {
+			i = first + second;
+			
+			if (i > size) {
+				int newSize = size - lastIndex;
+				int newArr[newSize];
+				for (int j = 0; j < newSize; j++) newArr[j] = arr[j + lastIndex];
+				int temp = find(newArr, newSize, key);
+				return (temp + lastIndex);
+			} else {
+				if (key < arr[i]) {
+					int newSize = i - lastIndex;
+					int newArr[newSize];
+					if (newSize <= 2) {
+						for (int j = 0; j < newSize; j++) if (arr[lastIndex + j] == key) return (lastIndex + j);
+						
+						return -1;
+					} else for (int j = 0; j < newSize; j++) newArr[j] = arr[j + lastIndex];
+					int temp = find(newArr, newSize, key);
+					return (temp + lastIndex);
+				} else if (key > arr[i]) {
+					lastIndex = i;
+					first = second;
+					second = i;
+					continue;
+				} else if (key == arr[i]) return i;
+			}
+		}
+	}
+	
+	return -1;
+}
