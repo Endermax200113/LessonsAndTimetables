@@ -9,192 +9,352 @@
 
 <url>
   <loc>https://lessonsandtimetables.tk/</loc>
-  <lastmod>2019-12-13T14:35:11+00:00</lastmod>
+  <lastmod>2020-01-30T15:13:22+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://lessonsandtimetables.tk/pages/home.html</loc>
-  <lastmod>2019-12-13T14:35:11+00:00</lastmod>
+  <lastmod>2020-01-30T15:13:22+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://lessonsandtimetables.tk/pages/news.html</loc>
+  <lastmod>2020-01-30T15:13:22+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://lessonsandtimetables.tk/pages/proger.html</loc>
-  <lastmod>2019-12-13T14:35:11+00:00</lastmod>
+  <lastmod>2020-01-30T15:13:22+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://lessonsandtimetables.tk/pages/timetables.html</loc>
-  <lastmod>2019-12-13T14:35:11+00:00</lastmod>
+  <lastmod>2020-01-30T15:13:22+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://lessonsandtimetables.tk/pages/proger/mdk/subgr2/dhome1.html</loc>
-  <lastmod>2019-12-13T14:35:11+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://lessonsandtimetables.tk/pages/proger/ta/sort.html</loc>
-  <lastmod>2019-12-13T14:35:11+00:00</lastmod>
+  <loc>https://lessonsandtimetables.tk/pages/proger/ta/search.html</loc>
+  <lastmod>2020-01-30T15:13:22+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://lessonsandtimetables.tk/pages/home/mdk.html</loc>
-  <lastmod>2019-12-13T14:35:11+00:00</lastmod>
+  <lastmod>2020-01-30T15:13:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://lessonsandtimetables.tk/pages/home/os.html</loc>
+  <lastmod>2020-01-30T15:13:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://lessonsandtimetables.tk/pages/home/english.html</loc>
+  <lastmod>2020-01-30T15:13:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://lessonsandtimetables.tk/pages/home/tsi.html</loc>
+  <lastmod>2020-01-30T15:13:22+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://lessonsandtimetables.tk/pages/proger/ta.html</loc>
-  <lastmod>2019-12-13T14:35:11+00:00</lastmod>
+  <lastmod>2020-01-30T15:13:22+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://lessonsandtimetables.tk/pages/proger/logic.html</loc>
-  <lastmod>2019-12-13T14:35:11+00:00</lastmod>
+  <lastmod>2020-01-30T15:13:22+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://lessonsandtimetables.tk/pages/proger/mdk.html</loc>
-  <lastmod>2019-12-13T14:35:11+00:00</lastmod>
+  <lastmod>2020-01-30T15:13:22+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://lessonsandtimetables.tk/pages/proger/mdk/subgr2.html</loc>
-  <lastmod>2019-12-13T14:35:11+00:00</lastmod>
+  <loc>https://lessonsandtimetables.tk/pages/proger/os.html</loc>
+  <lastmod>2020-01-30T15:13:22+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://lessonsandtimetables.tk/pages/proger/ta/details/bubble.html</loc>
-  <lastmod>2019-12-13T14:35:11+00:00</lastmod>
+  <loc>https://lessonsandtimetables.tk/pages/proger/ta/search/code/consistent.txt</loc>
+  <lastmod>2020-01-30T15:13:22+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://lessonsandtimetables.tk/pages/proger/ta/details/insert.html</loc>
-  <lastmod>2019-12-13T14:35:11+00:00</lastmod>
+  <loc>https://lessonsandtimetables.tk/pages/proger/ta/search/code/binary.txt</loc>
+  <lastmod>2020-01-30T15:13:22+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://lessonsandtimetables.tk/pages/proger/ta/details/select.html</loc>
-  <lastmod>2019-12-13T14:35:11+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lessonsandtimetables.tk/pages/proger/ta/details/merger.html</loc>
-  <lastmod>2019-12-13T14:35:11+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://lessonsandtimetables.tk/pages/proger/ta/details/pyramid.html</loc>
-  <lastmod>2019-12-13T14:35:11+00:00</lastmod>
+  <loc>https://lessonsandtimetables.tk/pages/proger/ta/search/code/fib.txt</loc>
+  <lastmod>2020-01-30T15:13:22+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://lessonsandtimetables.tk/pages/home/mdk/subgr2.html</loc>
-  <lastmod>2019-12-13T14:35:11+00:00</lastmod>
+  <lastmod>2020-01-30T15:13:22+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://lessonsandtimetables.tk/pages/home/os/home1.html</loc>
+  <lastmod>2020-01-30T15:13:22+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://lessonsandtimetables.tk/pages/home/english/subgr1.html</loc>
+  <lastmod>2020-01-30T15:13:22+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://lessonsandtimetables.tk/pages/home/english/subgr2.html</loc>
+  <lastmod>2020-01-30T15:13:22+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://lessonsandtimetables.tk/pages/home/tsi/home1.html</loc>
+  <lastmod>2020-01-30T15:13:22+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://lessonsandtimetables.tk/pages/proger/ta/sort.html</loc>
+  <lastmod>2020-01-30T15:13:22+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lessonsandtimetables.tk/pages/proger/logic/offsets.html</loc>
-  <lastmod>2019-12-13T14:35:11+00:00</lastmod>
+  <lastmod>2020-01-30T15:13:22+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://lessonsandtimetables.tk/pages/proger/mdk/subgr2.html</loc>
+  <lastmod>2020-01-30T15:13:22+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://lessonsandtimetables.tk/pages/proger/os/dhome1.html</loc>
+  <lastmod>2020-01-30T15:13:22+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://lessonsandtimetables.tk/pages/home/mdk/subgr2/home1.html</loc>
-  <lastmod>2019-12-13T14:35:11+00:00</lastmod>
+  <lastmod>2020-01-30T15:13:22+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://lessonsandtimetables.tk/pages/home/english/subgr1/home1.html</loc>
+  <lastmod>2020-01-30T15:13:22+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://lessonsandtimetables.tk/pages/home/english/subgr2/home1.html</loc>
+  <lastmod>2020-01-30T15:13:22+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://lessonsandtimetables.tk/pages/home/english/subgr2/home2.html</loc>
+  <lastmod>2020-01-30T15:13:22+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://lessonsandtimetables.tk/pages/proger/ta/sort/code/java/bubble.txt</loc>
+  <lastmod>2020-01-30T15:13:22+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://lessonsandtimetables.tk/pages/proger/ta/sort/code/c/bubble.txt</loc>
+  <lastmod>2020-01-30T15:13:22+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://lessonsandtimetables.tk/pages/proger/ta/sort/code/cplus/bubble.txt</loc>
+  <lastmod>2020-01-30T15:13:22+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://lessonsandtimetables.tk/pages/proger/ta/sort/code/java/insert.txt</loc>
+  <lastmod>2020-01-30T15:13:22+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://lessonsandtimetables.tk/pages/proger/ta/sort/code/c/insert.txt</loc>
+  <lastmod>2020-01-30T15:13:22+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://lessonsandtimetables.tk/pages/proger/ta/sort/code/cplus/insert.txt</loc>
+  <lastmod>2020-01-30T15:13:22+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://lessonsandtimetables.tk/pages/proger/ta/sort/code/java/select.txt</loc>
+  <lastmod>2020-01-30T15:13:22+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://lessonsandtimetables.tk/pages/proger/ta/sort/code/c/select.txt</loc>
+  <lastmod>2020-01-30T15:13:22+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://lessonsandtimetables.tk/pages/proger/ta/sort/code/cplus/select.txt</loc>
+  <lastmod>2020-01-30T15:13:22+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://lessonsandtimetables.tk/pages/proger/ta/sort/code/java/merger.txt</loc>
+  <lastmod>2020-01-30T15:13:22+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://lessonsandtimetables.tk/pages/proger/ta/sort/code/c/merger.txt</loc>
+  <lastmod>2020-01-30T15:13:22+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://lessonsandtimetables.tk/pages/proger/ta/sort/code/cplus/merger.txt</loc>
+  <lastmod>2020-01-30T15:13:22+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://lessonsandtimetables.tk/pages/proger/ta/sort/code/java/pyramid.txt</loc>
+  <lastmod>2020-01-30T15:13:22+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://lessonsandtimetables.tk/pages/proger/ta/sort/code/c/pyramid.txt</loc>
+  <lastmod>2020-01-30T15:13:22+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://lessonsandtimetables.tk/pages/proger/ta/sort/code/cplus/pyramid.txt</loc>
+  <lastmod>2020-01-30T15:13:22+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://lessonsandtimetables.tk/pages/proger/ta/sort/details/bubble.html</loc>
+  <lastmod>2020-01-30T15:13:22+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://lessonsandtimetables.tk/pages/proger/ta/sort/details/insert.html</loc>
+  <lastmod>2020-01-30T15:13:22+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://lessonsandtimetables.tk/pages/proger/ta/sort/details/select.html</loc>
+  <lastmod>2020-01-30T15:13:22+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://lessonsandtimetables.tk/pages/proger/ta/sort/details/merger.html</loc>
+  <lastmod>2020-01-30T15:13:22+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://lessonsandtimetables.tk/pages/proger/ta/sort/details/pyramid.html</loc>
+  <lastmod>2020-01-30T15:13:22+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://lessonsandtimetables.tk/pages/proger/logic/offsets/var1.html</loc>
-  <lastmod>2019-12-13T14:35:11+00:00</lastmod>
+  <lastmod>2020-01-30T15:13:22+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://lessonsandtimetables.tk/pages/proger/logic/offsets/var2.html</loc>
-  <lastmod>2019-12-13T14:35:11+00:00</lastmod>
+  <lastmod>2020-01-30T15:13:22+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://lessonsandtimetables.tk/pages/proger/logic/offsets/lectures.html</loc>
-  <lastmod>2019-12-13T14:35:11+00:00</lastmod>
+  <lastmod>2020-01-30T15:13:22+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://lessonsandtimetables.tk/pages/proger/mdk/subgr2/dhome1.html</loc>
+  <lastmod>2020-01-30T15:13:22+00:00</lastmod>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://lessonsandtimetables.tk/pages/proger/logic/offsets/lectures/lec1.html</loc>
-  <lastmod>2019-12-13T14:35:11+00:00</lastmod>
+  <lastmod>2020-01-30T15:13:22+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://lessonsandtimetables.tk/pages/proger/logic/offsets/lectures/lec3.html</loc>
-  <lastmod>2019-12-13T14:35:11+00:00</lastmod>
+  <lastmod>2020-01-30T15:13:22+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://lessonsandtimetables.tk/pages/proger/logic/offsets/lectures/lec5.html</loc>
-  <lastmod>2019-12-13T14:35:11+00:00</lastmod>
+  <lastmod>2020-01-30T15:13:22+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://lessonsandtimetables.tk/pages/proger/logic/offsets/lectures/lec6.html</loc>
-  <lastmod>2019-12-13T14:35:11+00:00</lastmod>
+  <lastmod>2020-01-30T15:13:22+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://lessonsandtimetables.tk/pages/proger/logic/offsets/lectures/lec8.html</loc>
-  <lastmod>2019-12-13T14:35:11+00:00</lastmod>
+  <lastmod>2020-01-30T15:13:22+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://lessonsandtimetables.tk/pages/proger/logic/offsets/lectures/lec9.html</loc>
-  <lastmod>2019-12-13T14:35:11+00:00</lastmod>
+  <lastmod>2020-01-30T15:13:22+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://lessonsandtimetables.tk/pages/proger/logic/offsets/lectures/lec10.html</loc>
-  <lastmod>2019-12-13T14:35:11+00:00</lastmod>
+  <lastmod>2020-01-30T15:13:22+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://lessonsandtimetables.tk/pages/proger/logic/offsets/lectures/lec11.html</loc>
-  <lastmod>2019-12-13T14:35:11+00:00</lastmod>
+  <lastmod>2020-01-30T15:13:22+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://lessonsandtimetables.tk/pages/proger/logic/offsets/lectures/lec13.html</loc>
-  <lastmod>2019-12-13T14:35:11+00:00</lastmod>
+  <lastmod>2020-01-30T15:13:22+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://lessonsandtimetables.tk/pages/proger/logic/offsets/lectures/lec14.html</loc>
-  <lastmod>2019-12-13T14:35:11+00:00</lastmod>
+  <lastmod>2020-01-30T15:13:22+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://lessonsandtimetables.tk/pages/proger/logic/offsets/lectures/lec16.html</loc>
-  <lastmod>2019-12-13T14:35:11+00:00</lastmod>
+  <lastmod>2020-01-30T15:13:22+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://lessonsandtimetables.tk/pages/proger/logic/offsets/lectures/lec2.html</loc>
-  <lastmod>2019-12-13T14:35:11+00:00</lastmod>
+  <lastmod>2020-01-30T15:13:22+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://lessonsandtimetables.tk/pages/proger/logic/offsets/lectures/lec4.html</loc>
-  <lastmod>2019-12-13T14:35:11+00:00</lastmod>
+  <lastmod>2020-01-30T15:13:22+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://lessonsandtimetables.tk/pages/proger/logic/offsets/lectures/lec7.html</loc>
-  <lastmod>2019-12-13T14:35:11+00:00</lastmod>
+  <lastmod>2020-01-30T15:13:22+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://lessonsandtimetables.tk/pages/proger/logic/offsets/lectures/lec12.html</loc>
-  <lastmod>2019-12-13T14:35:11+00:00</lastmod>
+  <lastmod>2020-01-30T15:13:22+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 <url>
   <loc>https://lessonsandtimetables.tk/pages/proger/logic/offsets/lectures/lec15.html</loc>
-  <lastmod>2019-12-13T14:35:11+00:00</lastmod>
+  <lastmod>2020-01-30T15:13:22+00:00</lastmod>
   <priority>0.33</priority>
 </url>
 
