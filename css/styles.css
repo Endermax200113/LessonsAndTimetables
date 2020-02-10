@@ -564,6 +564,8 @@ body {
           .contentBlockDataNewsButtonOther {
             color: #aaa;
             width: 100%; }
+      .contentBlockDataSite {
+        display: none; }
 
 .footer {
   -webkit-box-flex: 0;
