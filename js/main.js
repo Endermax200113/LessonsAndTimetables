@@ -1,13 +1,18 @@
-var version = "0.1.1.73";
+var version = "0.1.1.74";
 
 var headerMenu = fromElement(".headerLeftLinkMenu");
 var header = fromElement(".header");
+var body;
 var menuOpen = false;
 
 window.addEventListener("load", function(e) {
 	console.info("Версия сайта: " + version);
 
-	password();
+	body = fromElement("body").innerHTML;
+	fromElement("body").innerHTML = "Введите пароль";
+	fromElement("body").style = "display: flex; justify-content: center; align-items: center;"
+
+	setTimeout(password, 1000);
 });
 
 document.addEventListener("click", function(e) {
@@ -37,9 +42,11 @@ window.addEventListener("resize", function(e) {
 });
 
 function password() {
-	if (prompt("Для доступа к сайту введите пароль") != "236poIsTheBest") {
+	if (prompt("Для доступа к сайту введите пароль\n\nВ дальнейшем, лучше скопируйте пароль, если она верна") != "236poIsTheBest") {
 		alert("К сожалению, Вы ввели неверный пароль");
 		fromElement("body").innerHTML = "Нет доступа";
-		fromElement("body").style = "display: flex; justify-content: center; align-items: center;"
+	} else {
+		fromElement("body").style = "";
+		fromElement("body").innerHTML = body;
 	}
 }
