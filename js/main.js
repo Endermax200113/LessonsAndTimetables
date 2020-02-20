@@ -6,6 +6,8 @@ var menuOpen = false;
 
 window.addEventListener("load", function(e) {
 	console.info("Версия сайта: " + version);
+
+	password();
 });
 
 document.addEventListener("click", function(e) {
@@ -33,3 +35,11 @@ window.addEventListener("resize", function(e) {
 		}
 	}
 });
+
+function password() {
+	if (prompt("Для доступа к сайту введите пароль") != "236poIsTheBest") {
+		alert("К сожалению, Вы ввели неверный пароль");
+		fromElement("body").innerHTML = "Нет доступа";
+		fromElement("body").style = "display: flex; justify-content: center; align-items: center;"
+	}
+}
