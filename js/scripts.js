@@ -116,10 +116,11 @@ function renameTextCl(cl, value) {
 function tester() {
 	alert("Функция успешно работает!");
 }
-var version = "0.1.1.70";
+var version = "0.1.1.83";
 
 var headerMenu = fromElement(".headerLeftLinkMenu");
 var header = fromElement(".header");
+var body;
 var menuOpen = false;
 
 window.addEventListener("load", function(e) {
